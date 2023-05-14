@@ -43,10 +43,10 @@ namespace ProjectName
             Console.WriteLine(""); 
             Console.WriteLine($"Your order total: ${totalCost}!"); 
             Console.WriteLine(""); 
-            Console.WriteLine($"Thank you for your Visit!");  
+            Console.WriteLine($"Have a lovely day");  
             Console.WriteLine("==================================");
             Console.WriteLine("");
-            Console.WriteLine("Press Enter to Exit");
+            Console.WriteLine("Enter to Exit");
             Console.ReadLine();
             
 
