@@ -15,5 +15,12 @@ namespace Bakery.Tests
       Assert.AreEqual(typeof(Bread), newBread.GetType());
     }
 
+    [TestMethod]
+    public void BreadOrder_ReturnOrderTotal_int()
+   { 
+    Bread newBread = new Bread(3);
+    Assert.AreEqual(10, newBread.BreadOrder());
+    } 
+    
   }
 }
