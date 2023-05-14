@@ -12,5 +12,14 @@ namespace Bakery.Models
     {
       PastryQuantity = Quantity;
     }
+
+    public int PastryOrder()
+    {
+      int discountPastry = (PastryQuantity / 4) * 3;
+      int fullPricePastry = PastryQuantity % 4;
+      PastryQuantity = (fullPricePastry + discountPastry) * Price;
+      return PastryQuantity;
+    }
+
   }
 }

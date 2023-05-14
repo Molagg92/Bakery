@@ -8,11 +8,17 @@ namespace Bakery.Tests
   public class PastryTests
   {
     [TestMethod]
-        public void PastryConstructor_CreateInstanceOfPastry_Pastry()
-    {
-      Pastry newPastry = new Pastry(2);
-      Assert.AreEqual(typeof(Pastry), newPastry.GetType());
-    }
-
+   public void PastryConstructor_CreateInstanceOfPastry_Pastry()
+  { 
+    Pastry newPastry = new Pastry(2);  
+    Assert.AreEqual(typeof(Pastry), newPastry.GetType());
   }
+
+  [TestMethod]
+  public void PastryOrder_ReturnOrderTotal_int()
+  {
+    Pastry newPastry = new Pastry(6);
+     Assert.AreEqual(10, newPastry.PastryOrder());
+  }
+}
 }
