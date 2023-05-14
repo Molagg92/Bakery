@@ -15,10 +15,8 @@ namespace Bakery.Models
 
     public int BreadOrder()
     {
-      int discountBread = (LoafQuantity / 3) * 2;
-      int fullPriceBread = LoafQuantity % 3;
-      LoafQuantity = (fullPriceBread + discountBread) * Price;
-      return LoafQuantity;
+
+      return ((LoafQuantity / 3) * 2 + (LoafQuantity % 3)) * Price;
     }
   }
 }
